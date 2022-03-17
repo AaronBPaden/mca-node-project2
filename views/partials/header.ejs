@@ -6,6 +6,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
-        <title>Title</title>
+        <title><%= title %></title>
     </head>
     <body>
+        <header class="header container-fluid">
+            <h1 class="title"><%= name %></h1>
+            <nav class="top-nav">
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link" href="products/ale">Ale</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products/stouts">Stouts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products/red">Red-Ale</a></li>
+                </ul>
+            </nav>
+        </header>
