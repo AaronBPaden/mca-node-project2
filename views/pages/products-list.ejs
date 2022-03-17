@@ -1,0 +1,16 @@
+<%- include('../partials/header'); %>
+<main class="main container-fluid">
+	<h2 class="section-title">Product Listing</h2>
+	<div class="products-container">
+		<% data.forEach(el => { %>
+			<a href="<%= data.productType %>/<%= el.id %>">
+				<div class="product-card">
+					<img className="img-fluid" src="<%= el.image %>" alt="<%= el.name %>" />
+					<h3 className="product-name"><%= el.name %></h3>
+					<p className="price"><%= el.price %></p>
+				</div>
+			</a>
+		<% }); %>
+	</div>
+</main>
+<%- include('../partials/footer'); %>
