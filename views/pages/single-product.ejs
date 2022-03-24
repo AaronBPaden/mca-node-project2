@@ -1,0 +1,7 @@
+<%- include('../partials/header'); %>
+<main class="main container-fluid">
+	<p><b>Rating:</b> <%= data.rating.average %>
+	<p><b>Reviews:</b> <%= data.rating.reviews %>
+	<p><a href="/products/<%= data.productType %>">Back to <%= data.productType %></a></p>
+</main>
+<%- include('../partials/footer'); %>
